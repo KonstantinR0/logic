@@ -1,8 +1,8 @@
 age = int(input("Введите свой возраст: "))
-citizen = input("Являетесь ли вы гражданином РФ?  ").casefold()
-pirson = input("Есть ли у вас уголовыная стать?  ").casefold()
+citizen = input("Являетесь ли вы гражданином РФ?  ")
+prison = input("Есть ли у вас уголовная статья?  ")
 
-if (age >= 18 ) and (citizen == "Да".casefold()) and (pirson == "Нет".casefold()):
+if (age >= 18) and (citizen == "Да" or "да") and (prison == "Нет" or "нет"):
     print("Вы можете проголосовать!")
 else:
-    print("К сожалению вы не можете прогоосовать")
+    print("К сожалению вы не можете проголосовать")
